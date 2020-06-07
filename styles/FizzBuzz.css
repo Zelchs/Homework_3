@@ -1,0 +1,45 @@
+body {
+    background-color: antiquewhite;
+    text-align: center;
+}
+.navcont {
+    display: grid;
+    grid-template-areas: 
+                        "min min"
+                        "max max"
+                     
+
+}
+.min-range {
+    grid-area: min;
+}
+.max-range {
+    grid-area: max;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.boxes {
+    width: 100px;
+    height: 100px;
+    border: black 2px solid;
+    margin: 5px;
+}
+.empty {
+    background-color: rgba(158, 37, 37, 0.712);
+}
+.FizzBuzz {
+    background-color: chartreuse;
+}
+.Fizz {
+    background-color: cyan;
+}
+.Buzz {
+    background-color: darkorange;
+}
+.boxes:hover {
+    box-shadow: 0px 10px 13px -7px #000000, 3px 6px 10px 0px rgba(0,0,0,0.45);
+}

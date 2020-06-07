@@ -10,12 +10,29 @@
 <body>
    <header>
        <h1>FizzBuzz</h1>
+       <hr>
        <div class="navcont">
-           <input type="number" class="minvalue" min="1" max="100" value="1">
-           <input type="number" class="maxvalue" min="1" max="100" value="100">
+           <div class="min-range">
+            <input type="range" class="input-min"  id="minValue" min="1" max="99" value="1">
+            <div>
+                <p>Min Value:</p>
+                <span id="minValueLabel"></span>
+            </div>
+            
+           </div>
+           <div class="max-range">
+            <input type="range" class="input-max"  id="maxValue" min="2" max="100" value="100">
+            <div>
+                <p>Max Value:</p>
+                <span id="maxValueLabel"></span>
+            </div>
+            
+           </div>
+           
+           
            <button class="btn" id="btn-reset">Reset</button>
           
-           <button class="btn" id="btn-all">All</button>
+           <button class="btn" id="btn-all">Add Elements</button>
        </div>
    </header>
    <main>
